@@ -35,7 +35,7 @@ class PatientsRequest extends FormRequest
         if ($this->method() === "POST") {
             $rules ['cpf'] = [
                 'required',
-                Rule::unique('patiens', 'cpf')
+                Rule::unique('patients', 'cpf')
             ];
         } else {
             $rules ['cpf'] = ['required',
