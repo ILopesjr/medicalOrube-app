@@ -15,7 +15,7 @@ class CreateSalasTable extends Migration
     {
         Schema::create('rooms', function (Blueprint $table) {
             $table->increments("id");
-            $table->string("string");
+            $table->string("number");
             $table->timestamps();
         });
     }

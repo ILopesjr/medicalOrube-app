@@ -28,7 +28,7 @@ class RelacionamentoReservasSalasMedicos extends Migration
      */
     public function down()
     {
-        Schema::table('rooms', function (Blueprint $table) {
+        Schema::table('reserves', function (Blueprint $table) {
             $table->dropForeign(["id_doctor"]);
             $table->dropForeign(["id_room"]);
         });
